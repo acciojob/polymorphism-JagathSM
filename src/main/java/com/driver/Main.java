@@ -1,9 +1,8 @@
 package com.driver;
 
 /*
-Observations:
+Observations should be, please check:
 This class contains 3 methods with same name, but it compiles & run successfully
-
  */
 
 public class Main {
@@ -26,6 +25,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+       // class Product is like an instance variable of class Main
+       // so need to access Product using Main object.
        Main.Product p = (new Main()).new Product();
 
         System.out.println(p.product(6, 7)); // 42
@@ -35,8 +36,6 @@ public class Main {
         System.out.println(p.product(2.8, 6.2)); // 17.36
 
     }
-
-
 
 }
 
