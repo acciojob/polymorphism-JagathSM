@@ -7,7 +7,7 @@ This class contains 3 methods with same name, but it compiles & run successfully
 
 public class Main {
 
-    public class Product {
+    public static class Product {
         // Over loaded methods
         public int product(int x, int y) {
             return x * y;
@@ -27,7 +27,7 @@ public class Main {
 
        // class Product is like an instance variable of class Main
        // so need to access Product using Main object.
-       Main.Product p = (new Main()).new Product();
+       Product p = new Product();
 
         System.out.println(p.product(6, 7)); // 42
 
@@ -38,6 +38,3 @@ public class Main {
     }
 
 }
-
-
-
