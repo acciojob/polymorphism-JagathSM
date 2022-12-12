@@ -7,7 +7,7 @@ This class contains 3 methods with same name, but it compiles & run successfully
 
 public class Main {
 
-    class Product {
+    public class Product {
         // Over loaded methods
         public int product(int x, int y) {
             return x * y;
